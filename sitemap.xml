@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url><loc>https://lunna-cafe.pages.dev/</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/coffee.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/cold-blended.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/chai-tea.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/mocktails-shakes.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/bites-snacks.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/sandwiches-toasts.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/pasta-bowls.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/mains-platters.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/desserts-waffles.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/signature-platters.html</loc></url>
-  <url><loc>https://lunna-cafe.pages.dev/menu/premium-experiences.html</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/coffee</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/cold-blended</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/chai-tea</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/mocktails-shakes</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/bites-snacks</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/sandwiches-toasts</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/pasta-bowls</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/mains-platters</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/desserts-waffles</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/signature-platters</loc></url>
+  <url><loc>https://lunna-cafe.pages.dev/menu/premium-experiences</loc></url>
+
 </urlset>
