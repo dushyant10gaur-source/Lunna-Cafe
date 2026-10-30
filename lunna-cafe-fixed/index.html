@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#40291f">
+  <meta name="description" content="Lunna Cafe — Exceptional coffee, thoughtful food, and beautiful moments.">
+
+  <title>LUNNA CAFE — Poured With Passion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================================
+       CINEMATIC LOADING SCREEN
+  ====================================== -->
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <span class="preloader-symbol">☾</span>
+      <p class="preloader-name">LUNNA CAFE</p>
+      <span class="preloader-caption">A little moment of magic.</span>
+
+      <div class="preloader-track">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =====================================
+       SITE NAVIGATION
+  ====================================== -->
+
+  <header class="site-header" id="siteHeader">
+
+    <a class="brand" href="index.html" aria-label="Lunna Cafe home">
+      <span class="brand-mark">L</span>
+
+      <span class="brand-copy">
+        <span class="brand-name">Lunna Cafe</span>
+        <span class="brand-caption">COFFEE · FOOD · MOMENTS</span>
+      </span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="primaryNavigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" id="primaryNavigation" aria-label="Main navigation">
+      <a class="navigation-link active" href="#home">Home</a>
+      <a class="navigation-link" href="#story">Our Story</a>
+      <a class="navigation-link" href="menu.html">Menu</a>
+      <a class="navigation-link" href="#experiences">Experiences</a>
+      <a class="navigation-link navigation-contact" href="#contact">
+        Let's Connect <span>↗</span>
+      </a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================
+         HERO — THE FIRST IMPRESSION
+    ====================================== -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-decoration hero-decoration-left" aria-hidden="true">
+        <span>EST.</span>
+        <span>2026</span>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          <span>YOUR NEW FAVOURITE CORNER</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">A slow ritual,</span>
+          <span class="hero-title-line hero-title-italic">
+            poured with <em>intent.</em>
+          </span>
+        </h1>
+
+        <p class="hero-description reveal">
+          More than a cup of coffee. A little escape from the everyday,
+          crafted for the conversations, the quiet moments, and everything
+          in between.
+        </p>
+
+        <div class="hero-actions reveal">
+
+          <a class="button button-primary" href="menu.html">
+            <span>Explore the menu</span>
+            <span class="button-arrow">↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#story">
+            <span>Discover Lunna</span>
+            <span class="button-arrow">↓</span>
+          </a>
+
+        </div>
+
+        <div class="hero-note reveal">
+          <span class="hero-note-symbol">✳</span>
+          <span>Thoughtfully made. Beautifully served.</span>
+        </div>
+
+      </div>
+
+
+      <!-- Decorative coffee composition -->
+
+      <div class="hero-visual" aria-label="Coffee, crafted with care">
+
+        <div class="coffee-orbit orbit-one" aria-hidden="true"></div>
+        <div class="coffee-orbit orbit-two" aria-hidden="true"></div>
+
+        <span class="coffee-bean bean-one" aria-hidden="true">◖</span>
+        <span class="coffee-bean bean-two" aria-hidden="true">◖</span>
+        <span class="coffee-bean bean-three" aria-hidden="true">◖</span>
+
+        <div class="coffee-image-main">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=850&q=80"
+            alt="Freshly prepared coffee in a ceramic cup"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </div>
+
+        <div class="coffee-image-small">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&q=75"
+            alt="Iced coffee prepared with milk"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <div class="coffee-stamp">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <path
+                id="stampCircle"
+                d="M 50,50 m -34,0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0"
+              />
+            </defs>
+
+            <text>
+              <textPath href="#stampCircle">
+                LUNNA CAFE · BREWED WITH LOVE ·
+              </textPath>
+            </text>
+
+            <text x="50" y="58" class="stamp-center">L</text>
+          </svg>
+        </div>
+
+        <div class="coffee-origin">
+          <span class="origin-label">A WORLD OF FLAVOUR</span>
+          <span class="origin-value">Carefully chosen. Beautifully brewed.</span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-bottom">
+
+        <span class="hero-bottom-left">
+          GOOD COFFEE. GOOD COMPANY.
+        </span>
+
+        <a href="#story" class="scroll-indicator">
+          <span>SCROLL TO EXPLORE</span>
+          <span class="scroll-indicator-line"></span>
+        </a>
+
+        <span class="hero-bottom-right">AHMEDABAD · INDIA</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         BRAND SIGNATURE STRIP
+    ====================================== -->
+
+    <section class="signature-strip" aria-label="The Lunna experience">
+
+      <div class="signature-item">
+        <span class="signature-icon">✳</span>
+        <span>Thoughtful ingredients</span>
+      </div>
+
+      <span class="signature-divider" aria-hidden="true"></span>
+
+      <div class="signature-item">
+        <span class="signature-icon">☕</span>
+        <span>Beautifully brewed</span>
+      </div>
+
+      <span class="signature-divider" aria-hidden="true"></span>
+
+      <div class="signature-item">
+        <span class="signature-icon">♡</span>
+        <span>Made for togetherness</span>
+      </div>
+
+      <span class="signature-divider" aria-hidden="true"></span>
+
+      <div class="signature-item">
+        <span class="signature-icon">✧</span>
+        <span>Moments worth keeping</span>
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         OUR STORY
+    ====================================== -->
+
+    <section class="story section-space" id="story">
+
+      <div class="story-image-wrap reveal">
+
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80"
+            alt="Warm, welcoming cafe interior"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <div class="story-image-caption">
+          <span class="story-caption-symbol">☾</span>
+          <span>A place to slow down.</span>
+        </div>
+
+        <span class="story-image-index">01 — OUR SPACE</span>
+
+      </div>
+
+
+      <div class="story-content reveal">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-dot"></span>
+          A LITTLE ABOUT US
+        </div>
+
+        <h2 class="section-title">
+          Not just a cafe.<br>
+          <em>A feeling.</em>
+        </h2>
+
+        <p class="story-paragraph">
+          Some places are made for rushing through the day.
+          Lunna was imagined for the moments when you choose to slow down.
+        </p>
+
+        <p class="story-paragraph">
+          The first sip of coffee. The table you never want to leave.
+          The conversations that somehow last for hours.
+          We believe these little things deserve something special.
+        </p>
+
+        <a href="#experiences" class="text-link">
+          <span>Discover our world</span>
+          <span class="text-link-arrow">↗</span>
+        </a>
+
+        <div class="story-signature">
+          <span class="story-signature-line"></span>
+          <span>Made with intention.</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FEATURED MENU
+    ====================================== -->
+
+    <section class="featured-menu section-space" id="featuredMenu">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <div class="section-eyebrow">
+            <span class="section-eyebrow-dot"></span>
+            SOMETHING GOOD IS BREWING
+          </div>
+
+          <h2 class="section-title">
+            A taste of <em>Lunna.</em>
+          </h2>
+        </div>
+
+        <p class="section-heading-description">
+          From your everyday favourites to little indulgences,
+          find something that feels just right.
+        </p>
+
+      </div>
+
+
+      <div class="featured-grid">
+
+        <article class="featured-card reveal">
+
+          <a href="menu/coffee.html" class="featured-card-link">
+
+            <div class="featured-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=750&q=75"
+                alt="Freshly made cappuccino"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <span class="featured-card-number">01</span>
+              <span class="featured-card-arrow">↗</span>
+            </div>
+
+            <div class="featured-card-info">
+              <span class="featured-card-category">THE CLASSICS</span>
+              <h3>Coffee & Espresso</h3>
+              <p>Rich aromas. Beautifully balanced flavours.</p>
+            </div>
+
+          </a>
+
+        </article>
+
+
+        <article class="featured-card reveal">
+
+          <a href="menu/cold-blended.html" class="featured-card-link">
+
+            <div class="featured-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=750&q=75"
+                alt="Refreshing iced coffee"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <span class="featured-card-number">02</span>
+              <span class="featured-card-arrow">↗</span>
+            </div>
+
+            <div class="featured-card-info">
+              <span class="featured-card-category">A LITTLE REFRESHMENT</span>
+              <h3>Cold & Blended</h3>
+              <p>Chilled favourites for every kind of day.</p>
+            </div>
+
+          </a>
+
+        </article>
+
+
+        <article class="featured-card reveal">
+
+          <a href="menu/desserts-waffles.html" class="featured-card-link">
+
+            <div class="featured-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=750&q=75"
+                alt="Freshly prepared waffles"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <span class="featured-card-number">03</span>
+              <span class="featured-card-arrow">↗</span>
+            </div>
+
+            <div class="featured-card-info">
+              <span class="featured-card-category">SOMETHING SWEET</span>
+              <h3>Desserts & Waffles</h3>
+              <p>Because every good moment deserves a treat.</p>
+            </div>
+
+          </a>
+
+        </article>
+
+      </div>
+
+
+      <div class="featured-menu-footer reveal">
+
+        <p>THERE'S A LITTLE MORE TO DISCOVER.</p>
+
+        <a href="menu.html" class="button button-primary">
+          <span>Explore the full menu</span>
+          <span class="button-arrow">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         THE LUNNA EXPERIENCE
+    ====================================== -->
+
+    <section class="experience section-space" id="experiences">
+
+      <div class="experience-image">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1500&q=80"
+          alt="Beautifully presented cafe food"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <div class="experience-overlay"></div>
+
+      <div class="experience-content reveal">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-dot"></span>
+          FOR THE MOMENTS THAT MATTER
+        </div>
+
+        <h2 class="section-title">
+          Some moments<br>
+          deserve <em>more.</em>
+        </h2>
+
+        <p>
+          Date nights, birthdays, little celebrations, or simply
+          catching up with your favourite people.
+          Make the occasion a little more memorable with Lunna's
+          signature sharing platters and premium experiences.
+        </p>
+
+        <a href="menu/signature-platters.html" class="button button-light">
+          <span>Explore our experiences</span>
+          <span class="button-arrow">↗</span>
+        </a>
+
+      </div>
+
+      <span class="experience-index">02 — MADE FOR SHARING</span>
+
+    </section>
+
+
+    <!-- =====================================
+         CAFE PHILOSOPHY
+    ====================================== -->
+
+    <section class="philosophy section-space reveal">
+
+      <span class="philosophy-symbol" aria-hidden="true">“</span>
+
+      <p class="philosophy-label">A LITTLE LUNNA PHILOSOPHY</p>
+
+      <blockquote>
+        Life moves quickly.<br>
+        Let your coffee <em>take its time.</em>
+      </blockquote>
+
+      <span class="philosophy-divider"></span>
+
+      <p class="philosophy-footer">TAKE A BREATH. TAKE A SIP. STAY A WHILE.</p>
+
+    </section>
+
+
+    <!-- =====================================
+         CONTACT & VISIT
+    ====================================== -->
+
+    <section class="contact-section section-space" id="contact">
+
+      <div class="contact-content reveal">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-dot"></span>
+          COME ON IN
+        </div>
+
+        <h2 class="section-title">
+          Your next favourite<br>
+          moment is <em>waiting.</em>
+        </h2>
+
+        <p>
+          Good coffee is even better when shared.
+          Get in touch, explore our menu, and imagine your next
+          little escape at Lunna Cafe.
+        </p>
+
+        <div class="contact-actions">
+
+          <a href="menu.html" class="button button-primary">
+            <span>Find your favourite</span>
+            <span class="button-arrow">↗</span>
+          </a>
+
+          <a href="mailto:dushyant10gaur@gmail.com" class="text-link">
+            <span>Say hello</span>
+            <span class="text-link-arrow">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-visual reveal">
+
+        <div class="contact-photo">
+          <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=75"
+            alt="A welcoming coffee shop interior"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <div class="contact-note">
+          <span class="contact-note-symbol">☾</span>
+          <div>
+            <span class="contact-note-title">THE LUNNA WAY</span>
+            <span class="contact-note-text">Good things take a moment.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand-column">
+
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">L</span>
+
+          <span class="brand-copy">
+            <span class="brand-name">Lunna Cafe</span>
+            <span class="brand-caption">COFFEE · FOOD · MOMENTS</span>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          A little slower. A little sweeter. A little more Lunna.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+        <span class="footer-heading">EXPLORE</span>
+        <a href="index.html">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#experiences">Experiences</a>
+      </div>
+
+
+      <div class="footer-column">
+        <span class="footer-heading">THE MENU</span>
+        <a href="menu.html">All Categories</a>
+        <a href="menu/coffee.html">Coffee</a>
+        <a href="menu/desserts-waffles.html">Desserts</a>
+      </div>
+
+
+      <div class="footer-column">
+        <span class="footer-heading">SAY HELLO</span>
+        <a href="#contact">Contact</a>
+        <a href="mailto:dushyant10gaur@gmail.com">Email Us ↗</a>
+        <span class="footer-location">Ahmedabad, India</span>
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 LUNNA CAFE · DEMO WEBSITE</span>
+
+      <a href="#home" class="back-to-top">
+        BACK TO THE TOP <span>↑</span>
+      </a>
+
+      <span>DESIGNED WITH INTENTION.</span>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>

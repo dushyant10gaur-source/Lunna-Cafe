@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21130e">
+
+  <title>Our Menu | Lunna Cafe</title>
+
+  <meta
+    name="description"
+    content="Explore the Lunna Cafe menu, from carefully brewed coffee to signature sharing platters and indulgent desserts."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body class="menu-page">
+
+  <!-- Loading screen -->
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <span class="preloader-symbol">☾</span>
+      <p class="preloader-name">LUNNA CAFE</p>
+      <span class="preloader-caption">Something good is brewing.</span>
+
+      <div class="preloader-track">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation -->
+
+  <header class="site-header" id="siteHeader">
+
+    <a class="brand" href="index.html" aria-label="Lunna Cafe home">
+      <span class="brand-mark">L</span>
+
+      <span class="brand-copy">
+        <span class="brand-name">Lunna Cafe</span>
+        <span class="brand-caption">COFFEE · FOOD · MOMENTS</span>
+      </span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="primaryNavigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" id="primaryNavigation" aria-label="Main navigation">
+      <a class="navigation-link" href="index.html">Home</a>
+      <a class="navigation-link" href="index.html#story">Our Story</a>
+      <a class="navigation-link active" href="menu.html">Menu</a>
+      <a class="navigation-link" href="index.html#experiences">Experiences</a>
+      <a class="navigation-link navigation-contact" href="index.html#contact">
+        Let's Connect <span>↗</span>
+      </a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Menu introduction -->
+
+    <section class="menu-hero">
+
+      <div class="menu-hero-decoration" aria-hidden="true">L.</div>
+
+      <div class="menu-hero-content reveal">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-dot"></span>
+          GOOD TASTE STARTS HERE
+        </div>
+
+        <h1 class="menu-hero-title">
+          A menu made<br>
+          for <em>the moment.</em>
+        </h1>
+
+        <p>
+          A familiar favourite, a new little obsession, or something
+          worth sharing. Find your kind of wonderful.
+        </p>
+
+        <a href="#menuCategories" class="button button-primary">
+          <span>Explore our offerings</span>
+          <span class="button-arrow">↓</span>
+        </a>
+
+      </div>
+
+      <div class="menu-hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80"
+          alt="Coffee freshly prepared at a cafe"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="menu-hero-bottom">
+        <span>ELEVEN WAYS TO FIND YOUR FAVOURITE</span>
+        <span>CRAFTED FOR EVERY CRAVING.</span>
+      </div>
+
+    </section>
+
+
+    <!-- Category navigation -->
+
+    <section class="menu-categories section-space" id="menuCategories">
+
+      <div class="menu-section-heading reveal">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-dot"></span>
+          TAKE YOUR PICK
+        </div>
+
+        <h2 class="section-title">
+          Explore our <em>menu.</em>
+        </h2>
+
+        <p>
+          Choose a category to discover its flavours, favourites,
+          and little surprises.
+        </p>
+
+      </div>
+
+
+      <div class="menu-category-grid">
+
+        <a class="menu-category-card reveal" href="menu/coffee.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=650&q=75"
+              alt="Coffee and espresso"
+              loading="lazy"
+            >
+            <span class="category-index">01</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">THE EVERYDAY CLASSIC</span>
+            <h3>Coffee</h3>
+            <p>Espresso, lattes, cold brew and more.</p>
+            <span class="category-count">8 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/cold-blended.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=650&q=75"
+              alt="Iced coffee and blended drinks"
+              loading="lazy"
+            >
+            <span class="category-index">02</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">COOL LITTLE MOMENTS</span>
+            <h3>Cold & Blended</h3>
+            <p>Iced favourites and indulgent shakes.</p>
+            <span class="category-count">5 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/chai-tea.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=650&q=75"
+              alt="A warm cup of tea"
+              loading="lazy"
+            >
+            <span class="category-index">03</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">A COMFORTING CLASSIC</span>
+            <h3>Chai & Tea</h3>
+            <p>From comforting masala chai to matcha.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/mocktails-shakes.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=650&q=75"
+              alt="Refreshing fruit drinks"
+              loading="lazy"
+            >
+            <span class="category-index">04</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">FRESH & FRUITY</span>
+            <h3>Mocktails & Shakes</h3>
+            <p>Refreshing sips and creamy treats.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/bites-snacks.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=650&q=75"
+              alt="Crispy fries and savoury bites"
+              loading="lazy"
+            >
+            <span class="category-index">05</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">JUST A LITTLE SOMETHING</span>
+            <h3>Bites & Snacks</h3>
+            <p>Small plates, savoury favourites and chaat.</p>
+            <span class="category-count">7 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/sandwiches-toasts.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=650&q=75"
+              alt="Freshly prepared sandwiches"
+              loading="lazy"
+            >
+            <span class="category-index">06</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">A SATISFYING BITE</span>
+            <h3>Sandwiches & Toasts</h3>
+            <p>Grilled classics and flavourful creations.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/pasta-bowls.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=650&q=75"
+              alt="Fresh pasta with herbs"
+              loading="lazy"
+            >
+            <span class="category-index">07</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">COMFORT IN EVERY BITE</span>
+            <h3>Pasta & Bowls</h3>
+            <p>Comforting pasta, rice bowls and noodles.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/mains-platters.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=650&q=75"
+              alt="Freshly baked pizza"
+              loading="lazy"
+            >
+            <span class="category-index">08</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">COME HUNGRY</span>
+            <h3>Mains & Platters</h3>
+            <p>Pizza, burgers and satisfying main dishes.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/desserts-waffles.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=650&q=75"
+              alt="Sweet waffles and dessert"
+              loading="lazy"
+            >
+            <span class="category-index">09</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">SAVE ROOM FOR SWEET</span>
+            <h3>Desserts & Waffles</h3>
+            <p>Sweet endings and little indulgences.</p>
+            <span class="category-count">6 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/signature-platters.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=650&q=75"
+              alt="Beautifully presented sharing food"
+              loading="lazy"
+            >
+            <span class="category-index">10</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">BETTER TOGETHER</span>
+            <h3>Signature Platters</h3>
+            <p>Special spreads made for sharing.</p>
+            <span class="category-count">4 selections</span>
+          </div>
+        </a>
+
+
+        <a class="menu-category-card reveal" href="menu/premium-experiences.html">
+          <div class="menu-category-image">
+            <img
+              src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=650&q=75"
+              alt="An indulgent dessert presentation"
+              loading="lazy"
+            >
+            <span class="category-index">11</span>
+            <span class="category-arrow">↗</span>
+          </div>
+          <div class="menu-category-info">
+            <span class="category-kicker">MAKE IT MEMORABLE</span>
+            <h3>Premium Experiences</h3>
+            <p>Celebrations and curated experiences.</p>
+            <span class="category-count">3 experiences</span>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Signature message -->
+
+    <section class="menu-quote reveal">
+
+      <span class="philosophy-symbol" aria-hidden="true">“</span>
+
+      <p class="menu-quote-label">A NOTE FROM LUNNA</p>
+
+      <blockquote>
+        Come for the coffee.<br>
+        Stay for <em>the feeling.</em>
+      </blockquote>
+
+      <a href="index.html#story" class="text-link">
+        <span>Discover our story</span>
+        <span class="text-link-arrow">↗</span>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand-column">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">L</span>
+          <span class="brand-copy">
+            <span class="brand-name">Lunna Cafe</span>
+            <span class="brand-caption">COFFEE · FOOD · MOMENTS</span>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          A little slower. A little sweeter. A little more Lunna.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">EXPLORE</span>
+        <a href="index.html">Home</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#experiences">Experiences</a>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">THE MENU</span>
+        <a href="menu.html">All Categories</a>
+        <a href="menu/coffee.html">Coffee</a>
+        <a href="menu/desserts-waffles.html">Desserts</a>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">SAY HELLO</span>
+        <a href="index.html#contact">Contact</a>
+        <span class="footer-location">Ahmedabad, India</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 LUNNA CAFE · DEMO WEBSITE</span>
+      <a href="#menuCategories" class="back-to-top">BACK TO THE TOP <span>↑</span></a>
+      <span>DESIGNED WITH INTENTION.</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
